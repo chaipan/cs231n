@@ -1,0 +1,10 @@
+import numpy as np
+import pickle
+import gzip
+import test
+def load_CIFAR10():
+    f = gzip.open('D:\cs231n\cifar-10-python.tar.gz')
+    Xtr,Ytr,Xte,Ytr = pickle.load(f, 'UTF-8')
+    return (Xtr,Ytr,Xte,Ytr)
+
+
